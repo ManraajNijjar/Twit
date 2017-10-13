@@ -14,8 +14,9 @@
 		8625E2F91F903596004EAA10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8625E2F81F903596004EAA10 /* Assets.xcassets */; };
 		8625E2FC1F903596004EAA10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8625E2FA1F903596004EAA10 /* LaunchScreen.storyboard */; };
 		8625E3071F903596004EAA10 /* TwitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8625E3061F903596004EAA10 /* TwitTests.swift */; };
-		9440BE29A7E08AAF329872C0 /* Pods_Twit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 785E55EB726BF564B37EF78F /* Pods_Twit.framework */; };
-		9B9208166E6471B1F670BB95 /* Pods_TwitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58E5C2559F9F0679ABFDF5D2 /* Pods_TwitTests.framework */; };
+		8625E3121F904D67004EAA10 /* GlobalVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8625E3111F904D67004EAA10 /* GlobalVariables.swift */; };
+		8625E3141F904F53004EAA10 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8625E3131F904F53004EAA10 /* LoginViewController.swift */; };
+		8625E3161F904F93004EAA10 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8625E3151F904F93004EAA10 /* SafariServices.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,8 +31,6 @@
 
 /* Begin PBXFileReference section */
 		216AFD63B201FD4E7CDD542C /* Pods-TwitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TwitTests/Pods-TwitTests.debug.xcconfig"; sourceTree = "<group>"; };
-		58E5C2559F9F0679ABFDF5D2 /* Pods_TwitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TwitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		785E55EB726BF564B37EF78F /* Pods_Twit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Twit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8625E2EC1F903596004EAA10 /* Twit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Twit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8625E2EF1F903596004EAA10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8625E2F11F903596004EAA10 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -43,6 +42,9 @@
 		8625E3021F903596004EAA10 /* TwitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8625E3061F903596004EAA10 /* TwitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitTests.swift; sourceTree = "<group>"; };
 		8625E3081F903596004EAA10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8625E3111F904D67004EAA10 /* GlobalVariables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalVariables.swift; sourceTree = "<group>"; };
+		8625E3131F904F53004EAA10 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		8625E3151F904F93004EAA10 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
 		A0DC2040647045817F5BCCD3 /* Pods-TwitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TwitTests/Pods-TwitTests.release.xcconfig"; sourceTree = "<group>"; };
 		D5D641FEF4EAD9D2BD483F12 /* Pods-Twit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Twit.release.xcconfig"; path = "Pods/Target Support Files/Pods-Twit/Pods-Twit.release.xcconfig"; sourceTree = "<group>"; };
 		E511D6DC3869B2497D4237ED /* Pods-Twit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Twit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Twit/Pods-Twit.debug.xcconfig"; sourceTree = "<group>"; };
@@ -53,7 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9440BE29A7E08AAF329872C0 /* Pods_Twit.framework in Frameworks */,
+				8625E3161F904F93004EAA10 /* SafariServices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,7 +63,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B9208166E6471B1F670BB95 /* Pods_TwitTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,7 +93,9 @@
 			isa = PBXGroup;
 			children = (
 				8625E2EF1F903596004EAA10 /* AppDelegate.swift */,
+				8625E3111F904D67004EAA10 /* GlobalVariables.swift */,
 				8625E2F11F903596004EAA10 /* FirstViewController.swift */,
+				8625E3131F904F53004EAA10 /* LoginViewController.swift */,
 				8625E2F31F903596004EAA10 /* SecondViewController.swift */,
 				8625E2F51F903596004EAA10 /* Main.storyboard */,
 				8625E2F81F903596004EAA10 /* Assets.xcassets */,
@@ -114,8 +117,7 @@
 		A753323D06BFE6691429B2E5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				785E55EB726BF564B37EF78F /* Pods_Twit.framework */,
-				58E5C2559F9F0679ABFDF5D2 /* Pods_TwitTests.framework */,
+				8625E3151F904F93004EAA10 /* SafariServices.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -345,6 +347,8 @@
 			files = (
 				8625E2F41F903596004EAA10 /* SecondViewController.swift in Sources */,
 				8625E2F01F903596004EAA10 /* AppDelegate.swift in Sources */,
+				8625E3121F904D67004EAA10 /* GlobalVariables.swift in Sources */,
+				8625E3141F904F53004EAA10 /* LoginViewController.swift in Sources */,
 				8625E2F21F903596004EAA10 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
