@@ -13,7 +13,6 @@ import TwitterCore
 class LoginViewController: UIViewController {
 
     override func viewDidLoad() {
-        print("hello");
         super.viewDidLoad()
 
         let logInButton = TWTRLogInButton(logInCompletion: { session, error in
