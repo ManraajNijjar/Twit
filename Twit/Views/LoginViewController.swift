@@ -11,6 +11,8 @@ import TwitterKit
 import TwitterCore
 
 class LoginViewController: UIViewController {
+    
+    let twitterController = TwitterAPIController.sharedInstance
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,6 +20,7 @@ class LoginViewController: UIViewController {
         let logInButton = TWTRLogInButton(logInCompletion: { session, error in
             if (session != nil) {
                 print("signed in as \(String(describing: session?.userName))");
+                twitterController.twitterSession = session!
             } else {
                 print("error: \(String(describing: error?.localizedDescription))");
             }
